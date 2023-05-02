@@ -1,6 +1,6 @@
 
 async function getBlog(id) {
-    return (await fetch(`http://localhost:4000/posts/${id}`)).json()
+    return (await fetch(`http://localhost:4000/posts/${id}`, { next: { revalidate: 0 } })).json()
 }
 
 export async function generateMetadata({ params }){

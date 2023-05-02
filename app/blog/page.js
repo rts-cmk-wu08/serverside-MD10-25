@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 async function getBlogs(){
-  return (await fetch(`http://localhost:4000/posts`)).json()
+  return (await fetch(`http://localhost:4000/posts`, { next: { revalidate: 0 } })).json()
 }
 
 export default function StaticPropsPage() {
