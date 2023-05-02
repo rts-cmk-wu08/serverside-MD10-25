@@ -15,10 +15,18 @@ export default async function StaticPage({ params }) {
 
     console.log(blog)
     return(
-        <>
-            <h1>{blog.title}</h1>
-            <img src="https://placehold.co/1200x600" alt="placeholder image"/>
-            <p>{blog.text}</p>
-        </>
+        <section>
+            <div className="bg-hero w-full h-[250px]">
+                <div className="w-full h-full flex flex-col items-center justify-center">
+                    <h1 className="text-7xl">Blog Detail</h1>
+                    <p>Home Blog Blog detail</p>
+                </div>
+            </div>
+            <div className="flex flex-col mx-60 mt-16">
+                <h1 className="text-3xl">{blog.title}</h1>
+                <img src="https://placehold.co/1200x600" alt="placeholder image" className="mt-6"/>
+                <p className="mt-10">{blog.text}</p>
+            </div>
+        </section>
     )
 }
