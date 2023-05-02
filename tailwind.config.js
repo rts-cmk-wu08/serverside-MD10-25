@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero': "url('https://placehold.co/1920x370')",
+        'heroBeanie': "url('images/slider-hero-beanie.png')",
+        'heroBook': "url('images/slider-hero-book.png')",
+        'heroGirl': "url('images/slider-hero-girl.png')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
