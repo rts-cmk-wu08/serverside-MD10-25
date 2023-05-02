@@ -25,8 +25,8 @@ export default function StaticPropsPage() {
                 <div className="flex flex-wrap mx-72">
 			            {allBlogs?.map(blog =>
 			            		<div key={blog.id} className="flex flex-col flex-[33.333333333333333333333333333333%] gap-2">
-
                         <Link href={`/blog/${blog.id}`}>
+                        {/* Man kan også bruge Image som man kan import fra Next */}
                           <img src="https://placehold.co/200x200" alt="placeholder image" className="mt-6 w-[300px] h-[300px]"/>
                         </Link>
 
