@@ -16,8 +16,8 @@ export default async function StaticPage({ params }) {
     console.log(blog)
     return(
         <>
-            <h1>The id is: {blog.title}</h1>
-            <img src="https://placehold.co/500x500" alt="placeholder img"/>
+            <h1>{blog.title}</h1>
+            <img src="https://placehold.co/1200x600" alt="placeholder image"/>
             <p>{blog.text}</p>
         </>
     )

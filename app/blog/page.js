@@ -1,7 +1,9 @@
 import Link from "next/link"
 import { use } from "react"
 
-
+export const metadata = {
+  title: 'SWANKY blogs',
+};
 
 async function getBlogs(){
   return (await fetch(`http://localhost:4000/posts`)).json()
@@ -9,6 +11,7 @@ async function getBlogs(){
 
 export default function StaticPropsPage() {
   const allBlogs = use(getBlogs())
+  
     return (
     <section>
 			  <h2 className="text-2xl">BLOG PAGE</h2>
