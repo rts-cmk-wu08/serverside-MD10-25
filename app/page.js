@@ -1,10 +1,13 @@
-import  Slider  from './components/Slider'
+import Slider from './components/Slider'
+import SwankyStarted from './components/SwankyStarted'
+
 
 export default function Home() {
   
   return (
    <section>
-    <Slider/>
+      <Slider/>
+      <SwankyStarted/>
    </section>
   )
 }
