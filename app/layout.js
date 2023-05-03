@@ -1,6 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-
+import Navigation from './components/Navigation'
+import HeaderIcons from './components/HeaderIcons'
+import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -12,8 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} flex flex-col h-screen`}>
-        <header>
-          <p>header here</p>
+        <header className='h-24 flex items-center justify-between px-24'>
+          <Navigation/>
+          <Link href="/" className='uppercase text-xl w-2/6 text-center'>Swanky<span className='text-orange-600'>.</span></Link>
+          <HeaderIcons/>
         </header>
         <main className='flex-grow'>
           {children}

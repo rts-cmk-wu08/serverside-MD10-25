@@ -17,10 +17,10 @@ export default function Slider() {
     <Swiper navigation={true} modules={[Navigation]} loop={true} pagination={true} className="mySwiper h-[650px] bg-slate-600" >
             {allOffers?.map((offer, index) => (
                 <SwiperSlide className={`bg-no-repeat bg-center bg-cover ${ index === 0 ? "bg-heroBeanie" : index === allOffers.length - 1 ? "bg-heroBook" : "bg-heroGirl"}`}>
-                    <div>
-                        <h1>{offer.headline}</h1>
+                    <div className="flex flex-col gap-6 w-[700px] ml-[47%] mt-[10%]">
+                        <h1 className="text-7xl">{offer.headline}</h1>
                         <p>{offer.text}</p>
-                        <button className="uppercase">Shop now</button>
+                        <button className="uppercase bg-black text-white w-[186px] h-[36px]">Shop now</button>
                     </div>
                 </SwiperSlide>
                 ))}
