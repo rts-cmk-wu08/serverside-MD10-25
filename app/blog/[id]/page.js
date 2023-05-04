@@ -9,7 +9,7 @@ export async function generateMetadata({ params }){
   }
 
 
-export default async function StaticPage({ params }) {
+export default async function Blogpage({ params }) {
     const blog = await getBlog(params.id)
 
 
